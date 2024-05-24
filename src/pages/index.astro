@@ -1,9 +1,13 @@
 ---
+import { Icon } from 'astro-icon/components'
 import Layout from '../layouts/Layout.astro';
 // import Directives from  '../components/vue/Directives.vue';
 import TODO from '../components/vue/TODO.vue';
 import FAQ from '../components/vue/FAQ.vue'
 import Restaurante from '../components/vue/Restaurante.vue';
+import Blog from '../components/vue/Blog.vue';
+import Mensaje from '../components/vue/Mensaje.vue'
+
 ---
 
 <Layout title="Welcome to Astro." >
@@ -16,8 +20,11 @@ import Restaurante from '../components/vue/Restaurante.vue';
 
     <!-- <FAQ client:load/> -->
 
+<!-- 
+    <Restaurante client:load /> -->
 
-    <Restaurante client:load />
+<Blog client:load />
+<!-- <Mensaje client:load/> -->
 </Layout>
 
 

@@ -34,10 +34,8 @@ console.log(contador.value);
 
             </div>
             <div class="">
-                <input v-model="texto" class=" px-2 bg-white mt-10 h-11 rounded-lg border border-black " type="text">
-                <button  @click="medidor()"
-                class="bg-slate-300 ml-6 w-16 h-8 rounded-xl font-semibold  hover:bg-green-600 hover:border border-black "
-                >Enviar</button>
+                <input v-model="texto" @input="medidor() class=" px-2 bg-white mt-10 h-11 rounded-lg border border-black " type="text">
+                
             </div>
             
 

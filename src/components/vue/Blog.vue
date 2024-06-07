@@ -22,7 +22,6 @@ function showActivar(dato) {
         <div class="mx-auto w-2/4 border grid  gap-3 p-5 relative" 
         :class="estado ? 'grid-rows-6': 'grid-cols-3'"
         >
-<<<<<<< HEAD
             <div class="flex space-x-2 w-24 h-24 absolute top-[-50px] right-6">
                 <div class=" grid grid-cols-2 cursor-pointer border border-black w-10 h-10 p-[2px]" 
                 :class="{'bg-[#caddd7]':!estado}"
@@ -41,23 +40,6 @@ function showActivar(dato) {
                     <span class="w-full h-full border border-black" ></span>
                 </div>
              
-=======
-            <div class="flex space-x-1 w-20 h-20 absolute top-[-50px] right-6">
-                <div class="cursor-pointer w-10 h-10 border border-black p-[2px] grid grid-cols-2" @click="showActivar(1)" :class="{'bg-[#caddd7]':!estado}" >
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-                </div>
-                <div class="cursor-pointer grid grid-rows-4 w-10 h-10 p-[2px] border border-black" @click="showActivar(0)" :class="{'bg-[#caddd7]':estado}">
-
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-                <span class="border border-black w-full h-full" ></span>
-            
-                </div>
->>>>>>> 52544908328dbe02fc8d8a800556e27780b4face
             </div>
             <div v-for="(nota, i) in notas" :key="i" class="bg-[#caddd7] w-full p-1 h-52" 
             :class="{'flex h-auto ':estado}"
